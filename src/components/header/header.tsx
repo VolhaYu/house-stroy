@@ -2,7 +2,7 @@ import logo from '../../assets/png/logo.png';
 import whatsApp from '../../assets/svg/Group1278.svg';
 import telegram from '../../assets/svg/Group1279.svg';
 import viber from '../../assets/svg/Group1280.svg';
-import '../header.scss';
+import './header.scss';
 import Navigation from './navigation';
 
 function Header() {
