@@ -1,0 +1,162 @@
+$green: #319F1C;
+
+.header {
+
+  &__wrap-info {
+    margin-top: 27px;
+    height: 96px;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    // border: 1px solid;
+  }
+  
+  &__logo-img {
+    width: 297px;
+    height: 60px;
+    margin-right: 6.5%;
+  }
+
+  &__working-hours {
+    width: 186px;
+    height: 48px;
+    margin-top: 5px;
+    margin-right: 5.8%;
+  }
+
+  &__order {
+    width: 283px;
+    height: 64px;
+    display: flex;
+    margin-top: 3px;
+    margin-right: 4.8%;
+  }
+
+  &__contacts {
+    width: 275px;
+    height: 64.21px;
+    display: flex;
+    margin-top: 3px;
+    margin-right: 2%;
+  }
+
+  &__button {
+    width: 238px;
+    height: 64px;
+    background: $green;
+    box-shadow: 0px 4px 5px $green;
+    border-radius: 6px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: none;
+  }
+
+  &__wrap-nav {
+    display: flex;
+    align-items: center;
+    width: 1580px;
+    height: 64px;
+    background: linear-gradient(90deg, rgba(246, 246, 246, 0) 1.47%, rgba(163, 210, 155, 0.92) 7.25%, #319F1C 14.68%, #309E1B 50.68%, #319F1C 84.33%, rgba(147, 202, 137, 0.79) 91.68%, rgba(246, 246, 246, 0) 99.05%);
+    border-radius: 3px;
+  }
+}
+
+.working-hours {
+
+  &__text {
+    line-height: 24px;
+    margin: 0;
+  }
+}
+.order {
+  &__circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-image: url("../assets/svg/Group1086.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    border: 7px solid #E4E4E4;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    border-bottom: 1px solid black;
+  }
+}
+
+.contacts {
+  &__circle {
+    width: 64px;
+    height: 64px;
+    background: #E4E4E4;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  &__phone {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    color: #363130;
+    text-align: right;
+    margin: 4px 0 6px;
+  }
+  &__img {
+    width: 125.52px;
+    height: 27.21px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.circle {
+  &__ellipse1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../assets/svg/Group1071.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    border: 1.5px solid $green;
+    box-shadow: 0px 0px 12px $green;
+    background-color: #FFFFFF;
+    margin: 7px;
+  }
+  &__ellipse2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $green;
+    position: relative;
+    top: 35px;
+    left: 39px;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1044px;
+  height: 19px;
+  margin: 0 auto;
+
+  &__link {
+    color: #FFFFFF;
+    line-height: 19px;
+    text-decoration: none;
+    background-image: url("../assets/svg/Polygon13.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+  }
+
+  &__link:nth-child(4) {
+    background-image: none;
+    padding-right: 0;
+  }
+}
