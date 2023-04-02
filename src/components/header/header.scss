@@ -1,6 +1,7 @@
 $green: #319F1C;
 
 .header {
+  position: relative;
 
   &__wrap-info {
     margin-top: 27px;
@@ -8,7 +9,6 @@ $green: #319F1C;
     width: 100%;
     display: flex;
     align-items: start;
-    // border: 1px solid;
   }
   
   &__logo-img {
@@ -28,6 +28,7 @@ $green: #319F1C;
     width: 283px;
     height: 64px;
     display: flex;
+    align-items: center;
     margin-top: 3px;
     margin-right: 4.7%;
   }
@@ -59,6 +60,16 @@ $green: #319F1C;
     background: linear-gradient(90deg, rgba(246, 246, 246, 0) 1.47%, rgba(163, 210, 155, 0.92) 7.25%, #319F1C 14.68%, #309E1B 50.68%, #319F1C 84.33%, rgba(147, 202, 137, 0.79) 91.68%, rgba(246, 246, 246, 0) 99.05%);
     border-radius: 3px;
   }
+}
+.header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 306px;
+  height: 248px;
+  background: url(/src/assets/png/clouds1.png);
 }
 
 .working-hours {

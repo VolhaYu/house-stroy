@@ -7,7 +7,7 @@ import Navigation from './navigation';
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <div className="container">
         <div className="header__wrap-info">
           <img className="header__logo-img" src={logo} alt="logo" />

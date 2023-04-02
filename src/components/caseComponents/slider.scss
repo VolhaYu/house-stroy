@@ -1,0 +1,207 @@
+div .container-slider {
+  min-width: 100%;
+  width: 100%;
+}
+.slider {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 165px;
+  margin-bottom: 75px;
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 63px;
+  }
+  &__wrap-form {
+    position: relative;
+    width: 775px;
+    height: 289px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+  &__wrap-form::after {
+    content: "";
+    position: absolute;
+    top: -87px;
+    right: -84px;
+    width: 211px;
+    height: 183px;
+    background: url(/src/assets/png/present1.png);
+  }
+  &__wrap-form::before {
+    content: "";
+    position: absolute;
+    left: 79px;
+    bottom: -18px;
+    width: 91px;
+    height: 82px;
+    background: url(/src/assets/png/present2.png);
+  }
+  &__form {
+    padding-left: 39px;
+  }
+  &__input {
+    width: 334px;
+    height: 40px;
+    border: 1px solid #319F1C;
+    margin: 0 30px 13px 0;
+    padding-left: 34px;
+  }
+  &__submit {
+    background-color: #319F1C;
+    color:#FFFFFF;
+    margin-bottom: 10px;
+    padding-left: 0;
+  }
+}
+.wrap-slider {
+  margin-left: 9%;
+}
+.wrap-slider::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 381px;
+  left: 33px;
+  z-index: -1;
+  width: 1044px;
+  height: 358px;
+  background: url('/src/assets/png/clouds2.png');
+}
+.h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 42px;
+  color: #363130;
+  padding-top: 54px;
+  margin-bottom: 28px;
+}
+.wrap-form {
+  &__h3 {
+    padding: 30px 0 0 39px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 30px;
+    color: #319F1C;
+    margin-bottom: 21px;
+  }
+  &__p {
+    font-weight: 600;
+    line-height: 19px;
+    padding-left: 39px;
+    margin-bottom: 25px;
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    margin-right: 61px;
+    background-image: url('../../assets/svg/padlock.svg');
+    background-repeat: no-repeat;
+    background-position: 416px;
+  }
+}
+.container {
+  position: relative;
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 252px;
+  width: 186px;
+  height: 912px;
+  background: url('../../assets/png/tree.png');
+}
+body::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 645px;
+  width: 590px;
+  height: 355px;
+  background: url('../../assets/png/clouds3.png');
+}
+
+.wrap-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.wrap-buttons::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -185px;
+  right: 0;
+  z-index: -2;
+  width: 1040px;
+  height: 861px;
+  background: url(/src/assets/png/house.png);
+}
+.play-button {
+  position: relative;
+  margin-top: 31.5%;
+  margin-left: 33.5%;
+
+  &__button {
+    width: 282.18px;
+    height: 55px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    color: #319F1C;
+  }
+  &__img {
+    position: absolute;
+    top: -10px;
+    left: -45px;
+    width: 75.63px;
+    height: 76px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    background-image: url('../../assets/svg/play-button.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.group-buttons {
+  padding-top: 82px;
+}
+.calculator,
+.binoculars,
+.builder,
+.compass {
+  width: 87px;
+  height: 64px;
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.calculator {
+  background-image: url('../../assets/svg/calculator.svg');
+}
+.binoculars {
+  background-image: url('../../assets/svg//binoculars.svg');
+}
+.builder {
+  background-image: url('../../assets/svg/Group1090.svg');
+}
+.compass {
+  background-image: url('../../assets/svg/Group1091.svg');
+}
