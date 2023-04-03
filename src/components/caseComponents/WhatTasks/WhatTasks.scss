@@ -1,0 +1,93 @@
+.what-tasks {
+  max-width: 1580px;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+  // overflow: hidden;
+  margin-bottom: 184px;
+
+  &__h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 52px;
+    color: #363130;
+    margin-bottom: 19px;
+  }
+
+  &__wrap-text1,
+  &__wrap-text2 {
+    width: 1581px;
+    height: 294px;
+    border: 1px solid #319F1C;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    padding: 24px 60px 36px 43px;
+    margin-bottom: 58px;
+  }
+
+  &__texts {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  &__h3, 
+  &__h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 26px;
+    color: #363130;
+  }
+
+  &__h4 {
+    font-size: 20px;
+    color: #676262;
+    margin-bottom: 29px;
+  }
+
+  &__wrap-text2 {
+    width: 1581px;
+    height: 294px;
+    padding: 30px 60px 30px 43px;
+    margin-bottom: 71px;
+  }
+
+  &__wrap-img {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__wrap-img::before {
+    content: "";
+    position: absolute;
+    top: 200px;
+    left: -171px;
+    z-index: -1;
+    width: 715px;
+    height: 351px;
+    background-image: url('../../../assets/png/white-clouds.png');
+  }
+}
+.what-tasks::before {
+  content: "";
+  position: absolute;
+  top: -98px;
+  right: -169px;
+  width: 197px;
+  height: 213px;
+  background-image: url('../../../assets/png/shavings.png');
+}
+.what-tasks::after {
+  content: "";
+  position: absolute;
+  top: 254px;
+  left: -171px;
+  width: 176px;
+  height: 220px;
+  background-image: url('../../../assets/png/Group1402.png');
+}
