@@ -1,5 +1,6 @@
 import WhatTasks from '../components/caseComponents/WhatTasks/WhatTasks';
-import Slider from '../components/caseComponents/slieder';
+import Slider from '../components/caseComponents/Slider/slieder';
+import Cooperation from '../components/caseComponents/Cooperation/cooperation';
 
 function Case() {
   return (
@@ -7,6 +8,7 @@ function Case() {
       <div className="container container-slider">
         <Slider />
         <WhatTasks />
+        <Cooperation />
       </div>
     </main>
   );

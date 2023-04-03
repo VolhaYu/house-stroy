@@ -1,9 +1,10 @@
 .footer {
-  // width: 1920px;
   height: 299px;
   background: #363130;
   color: white;
-  
+  &__wrap-logo {
+    margin-right: 10px;
+  }
   &__logo {
     width: 284px;
     height: 57px;
@@ -38,6 +39,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    color: white;
+    margin-bottom: 15px;
   }
 
   &__text:nth-child(3) {
@@ -54,6 +57,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 34px;
+  padding-left: 8px;
 }
 
 .wrap-link {

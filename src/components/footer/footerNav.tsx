@@ -29,13 +29,13 @@ function FooterNav() {
           3D-макет дома
         </Link>
         <Link className="wrap-link__link" to="/">
-          Контакты
+          О нас
         </Link>
         <Link className="wrap-link__link" to="/">
           Блог
         </Link>
         <Link className="wrap-link__link" to="/">
-          О нас
+          Контакты
         </Link>
       </div>
     </>
