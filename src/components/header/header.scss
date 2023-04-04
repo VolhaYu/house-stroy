@@ -1,3 +1,4 @@
+@import "../../media_mixin.scss";
 $green: #319F1C;
 
 .header {
@@ -9,12 +10,35 @@ $green: #319F1C;
     width: 100%;
     display: flex;
     align-items: start;
+
+    @include _1580 {
+      justify-content: space-between;
+    }
+
+    @include _1056 {
+      flex-wrap: wrap;
+      align-items: center;
+      height: auto;
+      justify-content: space-around;
+      padding-bottom: 5px;
+    }
   }
   
   &__logo-img {
     width: 297px;
     height: 60px;
     margin-right: 6.5%;
+    @include _1580 {
+      margin-right: 0;
+    }
+
+    @include _1320 {
+      max-width: 18%;
+    }
+    @include _1056 {
+      max-width: 17%;
+      height: auto;
+    }
   }
 
   &__working-hours {
@@ -22,6 +46,16 @@ $green: #319F1C;
     height: 48px;
     margin-top: 5px;
     margin-right: 5.8%;
+    @include _1580 {
+      margin-right: 0;
+    }
+    @include _1320 {
+      width: auto;
+      height: auto;
+    }
+    @include _1056 {
+      margin: 0;
+    }    
   }
 
   &__order {
@@ -31,6 +65,13 @@ $green: #319F1C;
     align-items: center;
     margin-top: 3px;
     margin-right: 4.7%;
+    @include _1580 {
+      margin-right: 0;
+    }
+    @include _1320 {
+      width: auto;
+      height: auto;
+    }
   }
 
   &__contacts {
@@ -39,6 +80,14 @@ $green: #319F1C;
     display: flex;
     margin-top: 3px;
     margin-right: 2%;
+    @include _1580 {
+      margin-right: 0;
+    }
+
+    @include _1320 {
+      width: auto;
+      height: auto;
+    }
   }
 
   &__button {
@@ -50,15 +99,27 @@ $green: #319F1C;
     line-height: 19px;
     color: #FFFFFF;
     border: none;
+
+    @include _1320 {
+      max-width: 18%;
+    }
+    @include _1320 {
+      max-width: 17%;
+      height: 40px;
+    }
   }
 
   &__wrap-nav {
     display: flex;
     align-items: center;
-    width: 1580px;
+    max-width: 1580px;
     height: 64px;
     background: linear-gradient(90deg, rgba(246, 246, 246, 0) 1.47%, rgba(163, 210, 155, 0.92) 7.25%, #319F1C 14.68%, #309E1B 50.68%, #319F1C 84.33%, rgba(147, 202, 137, 0.79) 91.68%, rgba(246, 246, 246, 0) 99.05%);
     border-radius: 3px;
+
+    @include _1056 {
+      height: 50px;
+    }
   }
 }
 .header::before {
@@ -77,7 +138,13 @@ $green: #319F1C;
   &__text {
     line-height: 24px;
     margin: 0;
-  }
+
+    @include _1320 {
+      max-width: 100%;
+      font-size: 14px;
+      line-height: 19px;
+    }
+    }
 }
 .order {
   &__circle {
@@ -89,6 +156,11 @@ $green: #319F1C;
     background-repeat: no-repeat;
     margin-right: 8px;
     border: 7px solid #E4E4E4;
+
+    @include _1056 {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   &__text {
@@ -96,6 +168,15 @@ $green: #319F1C;
     line-height: 21px;
     text-align: right;
     border-bottom: 1px solid black;
+
+    @include _1320 {
+      max-width: 100%;
+      font-size: 14px;
+      line-height: 19px;
+    }
+    @include _1056 {
+      line-height: 16px;
+    }
   }
 }
 
@@ -106,6 +187,11 @@ $green: #319F1C;
     background: #E4E4E4;
     border-radius: 50%;
     margin-right: 8px;
+
+    @include _1056 {
+      width: 50px;
+      height: 50px;
+    }
   }
   &__phone {
     font-family: 'Montserrat', sans-serif;
@@ -116,6 +202,15 @@ $green: #319F1C;
     color: #363130;
     text-align: right;
     margin: 4px 0 6px;
+    @include _1320 {
+      max-width: 100%;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    @include _1056 {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
   &__img {
     width: 125.52px;
@@ -123,6 +218,12 @@ $green: #319F1C;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+
+    @include _1056 {
+      width: auto;
+      height: auto;
+      justify-content: space-evenly;
+    }
   }
 }
 .circle {
@@ -138,6 +239,10 @@ $green: #319F1C;
     box-shadow: 0px 0px 12px $green;
     background-color: #FFFFFF;
     margin: 7px;
+
+    @include _1056 {
+      margin: 0;
+    }
   }
   &__ellipse2 {
     width: 10px;
@@ -149,12 +254,20 @@ $green: #319F1C;
     left: 39px;
   }
 }
+.wrap-contacts {
+  width: auto;
+  height: auto;
+}
 .nav {
   display: flex;
   justify-content: space-between;
   width: 1044px;
   height: 19px;
   margin: 0 auto;
+
+  @include _1320 {
+    justify-content: space-evenly;
+  }
 
   &__link {
     color: #FFFFFF;
@@ -164,6 +277,11 @@ $green: #319F1C;
     background-position: right center;
     background-repeat: no-repeat;
     padding-right: 20px;
+
+    @include _1056 {
+      font-size: 14px;
+    }
+    
   }
 
   &__link:nth-child(4) {

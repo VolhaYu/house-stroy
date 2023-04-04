@@ -1,9 +1,27 @@
+@import "../../../media_mixin.scss";
+
 .cooperation {
   display: flex;
+  justify-content: space-between;
   position: relative;
+  @include _1056 {
+    justify-content: flex-end;
+  }
 
   &__img {
+    max-width: 100%;
+    width: 60%;
     margin-right: 6%;
+    @include _1580 {
+      max-width: 100%;
+      width: 50%;
+      margin-right: 0;
+    }
+    @include _1056 {
+      width: 100%;
+      height: 500px;
+      position: absolute;
+    }
   }
   &__blok::before {
     content: "";
@@ -13,6 +31,16 @@
     width: 214px;
     height: 233px;
     background-image: url(../../../assets/png/shepki.png);
+
+    @include _1580 {
+      left: -200px;
+      top: -120px;
+      width: 171px;
+      height: 186px;
+    }
+    @include _1056{
+      background: none;
+    }
   }
 
   &__blok {
@@ -21,6 +49,19 @@
     background-image: url(../../../assets/png/shepki4.png);
     background-repeat: no-repeat;
     background-position: 426px 368px;
+    
+    @include _1580 {
+      padding-top: 0;
+      background-position: 383px 325px;
+    }
+    @include _1320 {
+      background-image: none;
+    }
+    @include _1056 {
+      text-align: right;
+      max-width: 80%;
+    }
+
   }
 
   &__h3 {
@@ -41,6 +82,11 @@
   }
 
   &__form {
+    @include _1056 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
   }
 }
 .cooperation{
@@ -69,6 +115,9 @@
   display: block;
   margin-bottom: 32px;
   padding: 13px 0 0 30px;
+  @include _1056 {
+    // margin: 0 auto 32px;
+  }
 }
 .cooperation::before {
   content: "";
@@ -78,5 +127,12 @@
   width: 413px;
   height: 866px;
   background: url(/src/assets/png/tree1.png);
+  @include _1056 {
+    // right: 0;
+    // top: 0;
+    // width: 413px;
+    // height: 555px;
+    background: none;
+  }
 
 }

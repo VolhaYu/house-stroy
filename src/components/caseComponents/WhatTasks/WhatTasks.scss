@@ -1,10 +1,20 @@
+@import "../../../media_mixin.scss";
+
 .what-tasks {
   max-width: 1580px;
   min-width: 320px;
   margin: 0 auto;
   position: relative;
-  // overflow: hidden;
   margin-bottom: 184px;
+
+  @include _1580 {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 10px;
+  }
+  @include _1580 {
+    margin-bottom: 60px;
+  }
 
   &__h2 {
     font-family: 'Montserrat';
@@ -14,6 +24,11 @@
     line-height: 52px;
     color: #363130;
     margin-bottom: 19px;
+
+    @include _1056 {
+      font-size: 28px;
+      line-height: 46px;
+    }
   }
 
   &__wrap-text1,
@@ -25,6 +40,17 @@
     border-radius: 3px;
     padding: 24px 60px 36px 43px;
     margin-bottom: 58px;
+
+    @include _1580 {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      padding-bottom: 0;
+    }
+    @include _1056 {
+      margin-bottom: 40px;
+      padding: 20px 20px 0;
+    }
   }
 
   &__texts {
@@ -32,6 +58,15 @@
     font-size: 16px;
     line-height: 26px;
     margin-bottom: 30px;
+
+    @include _1320 {
+      margin-bottom: 15px;
+      line-height: 20px;
+    }
+    @include _1056 {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 
   &__h3, 
@@ -43,12 +78,21 @@
     line-height: 26px;
     color: #363130;
     margin-bottom: 5px;
+
+    @include _1056 {
+      font-size: 28px;
+    }
   }
 
   &__h4 {
     font-size: 20px;
     color: #676262;
     margin-bottom: 29px;
+
+    @include _1056 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
   }
 
   &__wrap-text2 {
@@ -56,12 +100,26 @@
     height: 294px;
     padding: 30px 60px 30px 43px;
     margin-bottom: 71px;
+
+    @include _1580 {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      padding-bottom: 0;
+    }
+    @include _1056 {
+      margin-bottom: 40px;
+      padding: 20px 20px 0;
+    }
   }
 
   &__wrap-img {
     display: flex;
     justify-content: space-between;
     position: relative;
+    @include _1580 {
+      max-width: 100%;
+    }
   }
   &__wrap-img::before {
     content: "";
@@ -72,6 +130,21 @@
     width: 715px;
     height: 351px;
     background-image: url('../../../assets/png/white-clouds.png');
+
+    @include _1320 {
+      top: 124px;
+    }
+    @include _1056 {
+      top: -25px;
+      left: -19px;
+      width: 660px;
+      height: 320px;
+    }
+  }
+  &__img {
+    @include _1580 {
+      max-width: 32%;
+    }
   }
 }
 .what-tasks::before {

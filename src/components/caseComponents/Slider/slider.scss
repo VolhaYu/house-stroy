@@ -1,18 +1,35 @@
+@import "../../../media_mixin.scss";
+
 div .container-slider {
   min-width: 100%;
   width: 100%;
 }
 .slider {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding-bottom: 165px;
   margin-bottom: 75px;
+
+  @include _1320 {
+    margin-bottom: 0;
+  }
+  @include _1056 {
+    padding-bottom: 120px;
+  }
 
   &__text {
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 63px;
+
+    @include _1320 {
+      margin-bottom: 50px;
+    }
+    @include _1320 {
+      margin-bottom: 130px;
+    }
   }
   &__wrap-form {
     position: relative;
@@ -22,6 +39,12 @@ div .container-slider {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     margin-bottom: 15px;
+
+    @include _1320 {
+      max-width: 100%;
+      height: auto;
+      padding-bottom: 10px;
+    }
   }
   &__wrap-form::after {
     content: "";
@@ -31,6 +54,16 @@ div .container-slider {
     width: 211px;
     height: 183px;
     background: url(/src/assets/png/present1.png);
+
+    @include _1320 {
+      width: 172px;
+      height: 165px;
+      top: -109px;
+      right: -87px;
+    }
+    @include _1056 {
+      background: none;
+    }
   }
   &__wrap-form::before {
     content: "";
@@ -40,9 +73,16 @@ div .container-slider {
     width: 91px;
     height: 82px;
     background: url(/src/assets/png/present2.png);
+
+    @include _1320 {
+      bottom: -15%;
+    }
   }
   &__form {
     padding-left: 39px;
+    @include _1320 {
+      padding-left: 0;
+    }
   }
   &__input {
     width: 334px;
@@ -50,6 +90,11 @@ div .container-slider {
     border: 1px solid #319F1C;
     margin: 0 30px 13px 0;
     padding-left: 34px;
+
+    @include _1320 {
+      max-width: 48%;
+      margin: 0 1% 15px;
+    }
   }
   &__submit {
     background-color: #319F1C;
@@ -60,6 +105,17 @@ div .container-slider {
 }
 .wrap-slider {
   margin-left: 9%;
+  width: 50%;
+
+  @include _1580 {
+    margin-left: 0;
+    padding-left: 10px;
+    max-width: 50%;
+  }
+  @include _1056 {
+    width: 87%;
+    max-width: 100%;
+  }
 }
 .wrap-slider::before{
   content: "";
@@ -71,6 +127,12 @@ div .container-slider {
   width: 1044px;
   height: 358px;
   background: url('/src/assets/png/clouds2.png');
+
+  @include _1056 {
+    width: 950px;
+    height: 358px;
+    left: -149px;
+  }
 }
 .h1 {
   font-family: 'Montserrat';
@@ -135,6 +197,13 @@ body::before {
   display: flex;
   width: 100%;
   justify-content: space-between;
+
+  @include _1320 {
+    align-items: center;
+  }
+  @include _1320 {
+    justify-content: end;
+  }
 }
 .wrap-buttons::before {
   content: "";
@@ -146,11 +215,26 @@ body::before {
   width: 1040px;
   height: 861px;
   background: url(/src/assets/png/house.png);
+
+  @include _1320 {
+    width: 832px;
+  }
 }
 .play-button {
   position: relative;
   margin-top: 31.5%;
   margin-left: 33.5%;
+
+  @include _1320 {
+    margin-left: 20%;
+  }
+  @include _1056 {
+    position: absolute;
+    margin: 0;
+    top: 235px;
+    left: 20%;
+  }
+  
 
   &__button {
     width: 282.18px;
@@ -164,6 +248,11 @@ body::before {
     font-size: 20px;
     line-height: 24px;
     color: #319F1C;
+
+    @include _1056 {
+      width: 225px;
+      height: 44px;
+    }
   }
   &__img {
     position: absolute;
@@ -176,10 +265,18 @@ body::before {
     background-image: url('../../../assets/svg/play-button.svg');
     background-position: center;
     background-repeat: no-repeat;
+
+    @include _1056 {
+      width: 60.5px;
+      height: 60.8px;
+    }
   }
 }
 .group-buttons {
   padding-top: 82px;
+  @include _1056 {
+    padding-top: 0;
+  }
 }
 .calculator,
 .binoculars,
@@ -191,6 +288,11 @@ body::before {
   margin-bottom: 10px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @include _1056 {
+    width: 70px;
+    height: 51px;
+  }
 }
 
 .calculator {

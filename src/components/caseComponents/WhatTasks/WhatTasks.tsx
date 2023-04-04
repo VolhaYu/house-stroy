@@ -52,9 +52,9 @@ function WhatTasks() {
         </p>
       </div>
       <div className="what-tasks__wrap-img">
-        <img src={house1} alt="house1" />
-        <img src={house2} alt="house2" />
-        <img src={house3} alt="house3" />
+        <img className="what-tasks__img" src={house1} alt="house1" />
+        <img className="what-tasks__img" src={house2} alt="house2" />
+        <img className="what-tasks__img" src={house3} alt="house3" />
       </div>
     </section>
   );

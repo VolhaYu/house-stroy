@@ -2,18 +2,18 @@ import './slider.scss';
 import InputSelect from './inputSelect';
 
 function Slider() {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+  }
   return (
     <section className="slider">
       <div className="wrap-slider">
-        <h1 className="h1">
-          Кейс: дом из оцилиндрованного бруса
-          <br />в Балашихе под ключ
-        </h1>
+        <h1 className="h1">Кейс: дом из оцилиндрованного бруса в Балашихе под ключ</h1>
         <p className="slider__text">Двухэтажный дом, площадью 128 м² в европейском стиле</p>
         <div className="slider__wrap-form">
           <h3 className="wrap-form__h3">Хотите сотрудничать с профессионалами?</h3>
           <p className="wrap-form__p">Оставьте заявку и получите бесплатную консультацию</p>
-          <form className="slider__form" action="#">
+          <form className="slider__form" onSubmit={handleSubmit}>
             <input className="slider__input" type="text" placeholder="Ваше имя" />
             <InputSelect />
             <input className="slider__input" type="tel" placeholder="Номер телефона" />
